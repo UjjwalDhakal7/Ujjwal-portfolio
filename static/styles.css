@@ -1,0 +1,986 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+    
+}
+
+.about-me {
+    background-color: #131313;
+}
+
+.work {
+    background-color: #252525;
+}
+
+.hobbies {
+    background-color: #333333;
+}
+
+.blogs {
+    background-color: #3E3E3E;
+}
+
+.contact-form {
+    background-color: #020202;
+}
+
+.social {
+    background-color: black;
+}
+
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(white,white), url(/assets/pencil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: saturation;
+   
+}
+
+.top-bar, .me-container, .work-container, .blog-container {
+    padding: 10px 10%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    
+    
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .logo {
+        width: 30%;
+        height: 4%;
+        border-radius: 10px;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: none;
+        gap: 1rem;
+        font-size: 18px;
+        
+        .link, .icon {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .menu-phone {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 18px;
+        
+        .link {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+}
+   
+.quote {
+    position: absolute;
+    margin-left: 15%;
+    margin-right:10%;
+    margin-top: 15%;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color: #FFFFFF;
+
+    .para {
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }
+}
+
+/* about me */
+
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:black;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.me-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.me-img {
+    width: 200px;
+    height: 250px;
+    margin: 5px auto;
+    object-fit: cover;
+}
+
+
+
+.me-detail {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.me-detail-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    gap: 2rem;
+}
+
+.work {
+    padding: 25px 0;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.work-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hobbies {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+
+    
+
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 10px 0px;
+        font-size: 20px;
+
+        .hobby-content {
+            border-radius: 6px;
+
+
+            .hobby-title{
+                padding: 0px 20px;
+                font-size: 25px;
+            }
+
+            .hobby-img {
+                width: 90%;
+                border-radius: 20px;
+                object-fit: contain;
+                padding: 15px 10px;
+            }
+
+            .hobby-desc {
+                padding: 20px 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.blogs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    .blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+        padding: 10px 0px;     
+    
+            .blog-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                padding: 20px 0px;
+
+                .blog-img {
+                    width: 300px;
+                    height: 200px;
+                    object-fit: contain;
+                  }
+
+                .blog-desc { 
+                    width: 400px; 
+                    text-overflow: ellipsis; 
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3; 
+                    overflow: hidden;
+                    text-align: left;
+                    
+                }
+
+
+            }
+        }
+}
+
+.blog-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: 0 auto;
+
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 1rem;
+        padding: 0px 20px;
+        width: 100%;
+        
+        .sec-1, .sec-2, .sec-3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            
+            .f-content {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 0px 10px;
+
+                #fname[type= text], #email[type= email], #phone[type= phone]  {
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    border: 0px;
+                    width: 80%;
+                }
+
+                #query {
+                    padding-left: 10px;
+                    padding-top: 10%;
+                    border-radius: 6px;
+                    border: 0px;
+                    width: 80%;
+                }
+
+                
+            }
+        }
+        .sec-3{
+            display: flex;
+            flex-direction: column;
+            
+            .btn {
+                margin: 10px 10px;
+                width: 100px;
+                height: 50px;
+                font-size: medium;
+            }
+        }
+
+    }
+    
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin: 0 auto;
+    align-items: left;
+    gap: 2rem;
+            
+
+    .cards {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        color: #FFFFFF;
+        
+        .card-title {
+            display: none;
+        }
+        
+
+            .card-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #FFFFFF;
+                text-decoration: none;
+
+            
+            }               
+        
+    }
+    .rights {
+        justify-content: center;
+    }
+    
+}
+
+.locate-img {
+    width: 20%;
+    height: 250px;
+    color: #FFFFFF;
+}
+
+.form-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+/*-----CSS for Tab ------*/
+  
+@media screen and (min-width:520px) and (max-width:768px) {
+    
+.top-bar, .me-container, .work-container {
+    padding: 10px 10%; 
+    
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+        width: 30%;
+        height: 4%;
+        border-radius: 10px;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-basis: 60%;
+        gap: 1rem;
+        font-size: 18px;
+        
+
+        .link-1, .link-4{
+            display: none;
+        }
+
+        .link {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    
+    
+}
+.quote {
+    position: absolute;
+    width:auto;
+    margin-left: 15%;
+    margin-right:10%;
+    margin-top: 5%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: left;
+
+    .sub-text {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }
+}
+
+/* about me */
+
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.me-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+.me-img {
+    width: 100%;
+    height: 400px;
+    margin: 5px auto;
+}
+
+
+
+.me-detail-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+    width: 100%;
+    gap: 5rem;
+    font-size: 20px;
+}
+
+.me-detail-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+
+.hobbies {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    width: 100%;
+
+    
+
+    .hobby {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 1rem;
+        padding: 10px 0px;
+        font-size: 20px;
+
+        .hobby-content {
+            border-radius: 6px;
+            align-items: left;
+            gap: 1rem;
+
+            .hobby-img {
+                width: 50%;
+                border-radius: 40px;
+                object-fit: contain;
+                padding: 15px 10px;
+            }
+
+            .hobby-title{
+                padding: 20px 20px;
+            }
+
+            .hobby-desc {
+                padding: 20px 20px;
+            }
+        }
+    }
+}
+
+.blogs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    width: 100%;
+
+    .blog {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 90%;
+    
+            .blog-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                padding: 20px 20px;
+                
+            }
+        }
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    .form-form {
+        width: 100%;
+
+        .form-content {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 1rem;
+            width: 100%;
+            
+            .sec-1, .sec-2, .sec-3 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+                .f-content {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+    
+                    #fname[type= text], #email[type= email], #phone[type= phone]  {
+                        padding: 10px 10px;
+                        border-radius: 6px;
+                        border: 0px;
+                    }
+    
+                    #query {
+                        padding-left: 10px;
+                        padding-top: 10%;
+                        border-radius: 6px;
+                        border: 0px;
+                    }
+    
+                    
+                }
+            }
+            .sec-3{
+                display: flex;
+                flex-direction: column;
+                
+                .btn {
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 50px;
+                }
+            }
+    
+        }
+    }
+    
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    margin: 0 auto;
+    align-items: center;
+            
+
+    .cards {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 80%;
+        
+        
+
+            .card-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                color: #FFFFFF;
+                text-decoration: none;
+
+                
+
+                
+
+                .card-img {
+                    border-radius: 20px;
+                }
+
+                .card-img:hover {
+                    transition: 0.4s;
+                    
+                }
+            }               
+        
+    }
+    
+}
+
+.locate-img {
+    width: 20%;
+    height: 250px;
+}
+
+.form-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width:768px){
+
+    .top-bar, .me-container, .work-container {
+        padding: 10px 10%; 
+        
+    }
+
+    #home{
+        position: relative;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .logo {
+            width: 15%;
+            height: 4%;
+            border-radius: 10px;
+        }
+    
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+            flex-basis: 60%;
+            gap: 1rem;
+            font-size: 18px;
+            
+
+            .link-1, .link-4{
+                display: block;
+            }
+
+            .link {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+    .quote {
+        position: absolute;
+        margin-left: 40%;
+        margin-right:10%;
+        font-size: 30px;
+        color:antiquewhite;
+    
+        .hi{
+            color: #FFFFFF;
+        }
+        .para {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+        }
+
+    }
+
+    .me-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        .title {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .me-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .me-img {
+                width: 350px;
+                height: 500px;
+                margin: 5px auto;
+            }
+            .me-detail-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                font-size: 20px;
+                gap: 3rem;
+
+
+                .me-facts {
+                    padding-top: 20px;
+                }
+
+            } 
+            .me-detail-1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                font-size: 25px;
+            }
+            .me-detail {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                font-size: 25px;
+            }
+        }
+    }
+
+        
+
+        
+
+
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+
+        .form-form {
+            width: 60%;
+
+            .form-content {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 1rem;
+                width: 100%;
+                
+                .sec-1, .sec-2, .sec-3 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    
+                    .f-content {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        width: 100%;
+        
+                        #fname[type= text], #email[type= email], #phone[type= phone]  {
+                            padding: 10px 10px;
+                            border-radius: 6px;
+                            border: 0px;
+                        }
+        
+                        #query {
+                            padding-left: 10px;
+                            padding-top: 5%;
+                            border-radius: 6px;
+                            border: 0px;
+                        }
+        
+                        
+                    }
+                }
+                .sec-3{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .btn {
+                        margin: 10px 10px;
+                        width: 100px;
+                        height: 50px;
+                        font-size: medium;
+                        background-color:beige;
+                        border-radius: 6PX;
+                    }
+                }
+        
+            }
+        }
+
+        
+    }
+
+    .work-container {
+        display: flex;
+        gap: 3rem;
+        .work-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3rem;
+        
+        }
+
+    }
+
+    .hobbies {   
+    
+        .hobby {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            
+    
+            .hobby-content {
+                border-radius: 6px;
+    
+    
+                .hobby-title{
+                    padding: 0px 20px;
+                    font-size: 25px;
+                }
+    
+                .hobby-img {
+                    width: 20%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                    padding: 15px 10px;
+                }
+    
+                
+            }
+        }
+    }
+
+    .blogs {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    
+        .blog {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            
+                .blog-content {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 5px;
+                    padding: 20px 0px;
+                    
+    
+                    .blog-img {
+                        width: 400px;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                      }
+    
+                    .blog-desc {
+                        width: 400px; 
+                        text-overflow: ellipsis; 
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3; 
+                        overflow: hidden;
+                        text-align: left;
+                    }
+    
+    
+                }
+            }
+    }
+}
